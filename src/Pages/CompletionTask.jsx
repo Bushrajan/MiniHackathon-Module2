@@ -17,7 +17,7 @@ const CompletionTask = () => {
   }, []);
 
   return (
-    <div className="p-5 bg-violet-500 text-center rounded-lg shadow-md">
+    <div className="p-5 border text-center rounded-lg shadow-md">
 
       <h2>Completed Tasks</h2>
       {completedTasks.length > 0 ? (

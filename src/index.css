@@ -15,14 +15,14 @@ body {
 
 :root {
 
-  --orange: #6344d1 !important;
+  --orange: #B05BB8 !important;
   --lightorange: #346C6C !important;
   --blackcolor: #000000 !important;
   --textcolor_white: #ffffff !important;
   --textcolor_gray: #c3c3c3 !important;
 
   --placeholder: rgba(128, 128, 128, 0.139) !important;
-  --gradient-color: radial-gradient(circle, #000000 15%, #6344d1 85%) !important;
+  --gradient-color: radial-gradient(circle, #000000 15%, #B05BB8 85%) !important;
   --box-shadow: 1px 4px 5px #c3c3c3 !important;
 
 }
@@ -71,7 +71,7 @@ body {
   margin-top: 10px !important;
   margin-right: -120px !important;
   border-radius: 50%;
-  border: 3px solid #6344d1;
+  border: 3px solid #B05BB8;
   background-color: white !important;
 }
 
@@ -109,8 +109,10 @@ body {
 .form-control::placeholder {
   color: white !important;
 }
+
 .form3 input {
-  color: black !important; /* Ensure text is always black */
+  color: black !important;
+  /* Ensure text is always black */
 }
 
 
@@ -135,7 +137,7 @@ body {
   color: white !important;
   box-shadow: none !important;
   background-color: transparent !important;
-  border-bottom: 3px solid #6344d1 !important;
+  border-bottom: 3px solid #B05BB8 !important;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
 }
 
@@ -169,7 +171,7 @@ body {
 }
 
 .taskimage {
-  width:  60px !important;
+  width: 60px !important;
   height: 60px !important;
   border-radius: 50% !important;
   display: flex !important;
@@ -187,7 +189,28 @@ body {
 }
 
 /* ----------------------------------------- */
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
 
+.card {
+  min-height: 250px;
+  background-color: #f8f9fa;
+}
+
+.card .form-control {
+  border-radius: 5px;
+}
+
+.calenderimage {
+  width: 100%;
+  background-image: url("https://img.freepik.com/free-vector/2025-monthly-calendar-template-design_742173-29155.jpg?t=st=1745765938~exp=1745769538~hmac=52db4f48c2006286fe56970dfc58984285f382b098cfd4a2028886a3e5188a11&w=1380");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh !important;
+}
 
 /* **************loader**************** */
 .loader {
@@ -196,7 +219,7 @@ body {
   display: grid;
   border: 4px solid #0000;
   border-radius: 50%;
-  border-color: #6344d1 #ffffff;
+  border-color: #B05BB8 #ffffff;
   animation: l16 1s infinite linear;
   margin: 0 auto ! important;
 }
@@ -211,7 +234,7 @@ body {
 }
 
 .loader::before {
-  border-color: #6344d1 #ffffff;
+  border-color: #B05BB8 #ffffff;
   animation: inherit;
   animation-duration: .8s;
   animation-direction: reverse;

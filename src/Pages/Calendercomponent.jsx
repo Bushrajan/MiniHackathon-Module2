@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const CalendarComponent = () => {
@@ -10,21 +10,30 @@ const CalendarComponent = () => {
   const daysArray = [...Array(daysInMonth).keys()].map((day) => day + 1);
 
   return (
-    <div className="container border p-4 mx-auto rounded shadow-lg mt-4">
-      <h2 className="text-center mb-4">{month} {year}</h2>
+    <div className="container  border p-4 mx-auto rounded shadow-lg mt-4">
+      <h2 className="text-center mb-4">
+        {month} {year}
+      </h2>
 
       {/* Days of the Week */}
-      <div className="row my-3  text-center fw-bold">
+      <div className="row text-center  fw-bold">
         {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day, index) => (
-          <div key={index} className="col border p-2">{day}</div>
+          <div key={index} className="col border p-2">
+            {day}
+          </div>
         ))}
       </div>
 
-      {/* Days Grid */}
-      <div className="row">
-        {daysArray.map((day) => (
-          <div key={day} className="col border  my-3  rounded p-2 text-center">
-            {day}
+      {/* First Two Rows (15 days each) */}
+      <div className="row ">
+        {daysArray.slice(0, 31).map((day) => (
+          <div
+            key={day}
+            className="col-1     mx-auto my-2 p-2 text-center"
+          >
+            <button className="btn  border-light text-white w-100">
+              {day}
+            </button>
           </div>
         ))}
       </div>

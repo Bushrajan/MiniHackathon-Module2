@@ -11,7 +11,7 @@ import AuthForm from "./Pages/AuthForm";
 import AdminDashboard from "./Pages/AdminDashboard";
 import ProfilePage from "./Pages/ProfilePage";
 import AddTask from "./Pages/AddTask"; 
-import TasksAdded from "./TaskAdded";
+import TasksAdded from "./Pages/TaskAdded";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
